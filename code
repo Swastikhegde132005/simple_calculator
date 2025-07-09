@@ -9,11 +9,11 @@ class Calculator:
 
         self.expression = ""
 
-        # Create the display
+        
         self.display = tk.Entry(root, font=("Arial", 20), bd=10, relief=tk.RIDGE, justify="right")
         self.display.pack(side=tk.TOP, fill=tk.BOTH, ipadx=8, ipady=15, padx=10, pady=10)
 
-        # Create buttons
+       
         self.create_buttons()
 
     def create_buttons(self):
@@ -45,7 +45,7 @@ class Calculator:
         self.display.delete(0, tk.END)
         self.display.insert(tk.END, self.expression)
 
-# Run the app
+
 if __name__ == "__main__":
     root = tk.Tk()
     app = Calculator(root)
